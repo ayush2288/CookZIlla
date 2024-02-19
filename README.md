@@ -1,9 +1,9 @@
-# CookZilla
-Generate recipe from the ingrediantes
+##Home Screen
+
+https://github.com/ayush2288/CookZilla-generates-recipes-from-available-ingredients-and-also-search-for-recipes-/assets/130893158/9207cc52-f92e-4518-bf41-2710d102e787
 
 
-##Demo
+##hsnfkhjbe
 
-
-https://github.com/ayush2288/CookZilla-generates-recipes-from-available-ingredients-and-also-search-for-recipes-/assets/130893158/0074d7b3-62ff-400d-bf87-e5940872fdfa
+https://github.com/ayush2288/CookZilla-generates-recipes-from-available-ingredients-and-also-search-for-recipes-/assets/130893158/2b9706e6-e3d9-4fd3-9ed4-1dbe4a6d211a
 
