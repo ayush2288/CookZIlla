@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 class OpenAIService {
   final List<Map<String, String>> messages = [];
-  static const apiUri = 'https://api.openai.com/v1/chat/completions';
+ 
 
   Future<String> chatGPTAPI(String prompt) async {
     // await dotenv.load();
