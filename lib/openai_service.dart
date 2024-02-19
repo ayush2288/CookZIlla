@@ -18,7 +18,7 @@ class OpenAIService {
     messages.add({
       "role": "user",
       "content":
-          "Generate a delicious and creative recipe using the following ingredients: [list of ingredients] and respond to doubts, suggestions, or recommendations only related to food and recipe. Provide step-by-step instructions, cooking tips, and any additional only food or recipe suggestions to make this recipe enjoyable for all skill levels. Make sure your response should be point to point and crisp. Your goal is to inspire and guide readers through a successful and delightful cooking experience. and also show its nutrition values and if user ask for irrelevent doubts than ask them to put food or recipe related doubts and guide users if they ask only food or recipe-related questions. Assist them promptly if they inquire about the recipe or recipe-related matters. and dont show any error directly in the chatbox. if error comes say user to check there internet connection$prompt",
+          "Gngredn$prompt",
     });
 
     try {
@@ -26,7 +26,7 @@ class OpenAIService {
         Uri.parse(apiUri),
         headers: {
           'Content-Type': 'application/json',
-          "Authorization": 'Bearer $apiKey',
+          "Authorization": 'Bearer $apmiKey',
           'OpenAI-Organization': ''
         },
         body: jsonEncode({

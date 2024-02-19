@@ -13,25 +13,7 @@ class RecipeView extends StatefulWidget {
 }
 
 class _RecipeViewState extends State<RecipeView> {
-  late String finalUrl;
-  final Completer<WebViewController> controller = Completer<WebViewController>();
-  bool isLoading = true;
-
-  @override
-  void initState() {
-    if (widget.url.startsWith("http://")) {
-      finalUrl = widget.url.replaceFirst("http://", "https://");
-    } else {
-      finalUrl = widget.url;
-    }
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Flutter Food Recipe App"),
+  late String finalUrl;r Food Recipe App"),
         actions: [
           IconButton(
             icon: Icon(Icons.share),

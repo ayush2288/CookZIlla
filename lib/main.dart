@@ -17,16 +17,14 @@ import 'package:open_filex/openn_filex.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:uuid/uuid.dart';
 
-import 'home_sekarch.dart';
-import 'openai_semrvice.dart';
+import 'home_search.dart';
+import 'openai_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   initializeDateFormatting().then((_) => runApp(const MyApp()));
 
-  await dotenv.load(fileName: "assets/.env");
-
-  runApp(const MyApp());
+ 
 }
 
 class MyApp extends StatelessWidget {
@@ -179,7 +177,7 @@ class _ChatPageState extends State<ChatPage> {
         }
       }
 
-      await OpenFilex.open(localPath);
+      
     }
   }
 
@@ -197,25 +195,9 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
 
-  Future<void> _handleSendPressed(types.PartialText message) async {
-    final textMessage = types.TextMessage(
-      author: _user,
-      createdAt: DateTime.now().millisecondsSinceEpoch,
-      id: const Uuid().v4(),
-      text: message.text,
-    );
 
-    setState(() {
-      isDataLoading = true;
-    });
-    final aiResponse = await openAIService.chatGPTAPI(message.text);
 
-    final botMessage = types.TextMessage(
-      author: _bot,
-      createdAt: DateTime.now().millisecondsSinceEpoch,
-      id: const Uuid().v4(),
-      text: aiResponse,
-    );
+   
 
     _addMessage(textMessage);
 

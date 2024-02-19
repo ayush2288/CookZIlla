@@ -8,8 +8,7 @@ class LoadingScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white, // Change to your desired background color
       body: Center(
-        child: CircularProgressIndicator(), // or any other loading indicator widget
-      ),
+        child: 
     );
   }
 }
@@ -23,13 +22,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
-  @override
-  void initState() {
-    super.initState();
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
-      Future.delayed(const Duration(seconds: 2), () {
-        Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => Home()));
+  @overridecontext).pushReplacement(MaterialPageRoute(builder: (_) => Home()));
       });
     });
   }
@@ -47,11 +40,7 @@ class _SplashScreenState extends State<SplashScreen>
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: [Color.fromARGB(16,0, 22, 80),Color.fromARGB(16,0, 22, 80)],
-          ),
-        ),
-        child: Column(
+          gradientumn(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset("assets/Image/logoCookZilla.jpg"),

@@ -249,9 +249,9 @@ class _HomeState extends State<Home> {
   void _initializeRecipes() async {
     if (items.isNotEmpty) {
       final randomIndex = ran.Random().nextInt(items.length);
-      if (randomIndex >= 0 && randomIndex < items.length) {
+      if (randomIndex >= 0 && randomIndex < items.lmength) {
         await getRecipes(
-            items[randomIndex]); // Wait for the asynchronous operation
+            items[randnomIndex]); // Wait for the asynchronous operation
         setState(() {
           isLoading = false;
         });
@@ -276,24 +276,23 @@ class _HomeState extends State<Home> {
           ),
 
           /*
-      * InWell - Tap,DoubleTaP,etc.
-      * Gesture Detector
-      *
-      * Hover - Color
-      * Tap - Splash
-      *
-      * Getsure -
-      * Swipe,'
-      *
-      * Card - elevation background color,radius child
-      *
-      * ClipRRect - Frame - Photo Rectangle
-      *
-      * ClipPath - Custom CLips
-      *
+      // * InWell - Tap,DoubleTaP,etc.
+      // * Gesture Detector
+      // *
+      // * Hover - Color
+      // * Tap - Splash
+      // *
+      // * Getsure -
+      // * Swipe,'
+      // *
+      // * Card - elevation background color,radius child
+      // *
+      // * ClipRRect - Frame - Photo Rectangle
+      // *
+      // * ClipPath - Custom CLips
+      // *
       * positioned  - Stack - topleft , top,down,left - 2.2
-      *
-      * */
+     
           SingleChildScrollView(
             child: Column(
               children: [
@@ -348,13 +347,7 @@ class _HomeState extends State<Home> {
                                   fontSize: 16,
                                 ),
                               ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                           
 
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 20),
@@ -510,10 +503,7 @@ class _HomeState extends State<Home> {
                                         height: 250,
                                       )),
                                   Positioned(
-                                      left: 0,
-                                      right: 0,
-                                      bottom: 0,
-                                      top: 0,
+                                    
                                       child: Container(
                                           padding: EdgeInsets.symmetric(
                                               vertical: 5, horizontal: 10),
@@ -526,14 +516,7 @@ class _HomeState extends State<Home> {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
                                             children: [
-                                              Text(
-                                                reciptCatList[index]["heading"],
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontFamily: 'RaleWay',
-                                                    fontSize: 28),
-                                              ),
-                                            ],
+                                              T
                                           ))),
                                 ],
                               )),

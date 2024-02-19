@@ -39,8 +39,7 @@ class _SearchState extends State<Search> {
     String? apiKey = dotenv.env['APIKEY'];
     String? apiId = dotenv.env['ID'];
     String url =
-        "https://api.edamam.com/search?q=$query&app_id=${apiId}&app_key=${apiKey}";
-
+        
     Response response = await get(Uri.parse(url));
     Map data = jsonDecode(response.body);
     setState(() {
