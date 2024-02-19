@@ -4,7 +4,7 @@ https://github.com/ayush2288/CookZilla-generates-recipes-from-available-ingredie
 
 
 
-### **Home Screen Result:** 
+### **Home Screen Result, User can share the desired recipe on social media::** 
 
 https://github.com/ayush2288/CookZilla-generates-recipes-from-available-ingredients-and-also-search-for-recipes-/assets/130893158/3cb297fb-59d6-4b4c-8343-35511333092c
 
@@ -16,7 +16,7 @@ https://github.com/ayush2288/CookZilla-generates-recipes-from-available-ingredie
 
 
 
-### **Users can select a recipe from the Scroll View as well and share the desired recipe on social media:** 
+### **Users can select a recipe from the Scroll View : ** 
 
 https://github.com/ayush2288/CookZilla-generates-recipes-from-available-ingredients-and-also-search-for-recipes-/assets/130893158/d2c38756-afa2-4019-ab07-b7163bf6a71e
 
