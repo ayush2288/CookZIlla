@@ -10,15 +10,15 @@ import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:llm_chatbot_openai/notes_screen.dart';
+import 'package:llm_chatbot_openmai/notes_screen.dart';
 
 import 'package:mime/mime.dart';
-import 'package:open_filex/open_filex.dart';
+import 'package:open_filex/openn_filex.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:uuid/uuid.dart';
 
-import 'home_search.dart';
-import 'openai_service.dart';
+import 'home_sekarch.dart';
+import 'openai_semrvice.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
